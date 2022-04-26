@@ -44,5 +44,19 @@
     <p> <?=MEU_NOME?> </p>
     <p> <?=ESCOLA?> </p>
 
+    <?php
+
+    $data = "26/04/2022";
+    $nome = fulano;
+    $idade = 25;
+    $cidade = "São Paulo";
+
+    echo "<p>$data</p>";
+    echo "<div>$nome</div>"; 
+    echo "<p><i>"$idade"</p></i>";
+    echo "<p><b>$cidade</p></b>";
+    
+
+    ?>
 </body>
 </html>
