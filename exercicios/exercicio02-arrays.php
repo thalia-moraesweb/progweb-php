@@ -23,14 +23,16 @@
    ];
     ?>
         <p>
-            Olá meu nome é <?=$clientes["nome"]?> tenho 
-            <?=$clientes["idade"]?> anos meu e-mail é <?=$clientes["email"]
-        ?></p>
+            Olá meu nome é <b><?=$clientes["nome"]?></b> tenho 
+            <?=$clientes["idade"]?> anos meu e-mail é <b><?=$clientes["email"]
+
+        ?></p></b>
 
     <p>
-            Olá meu nome é <?=$clientes2["nome"]?> tenho 
-            <?=$clientes2["idade"]?> anos meu e-mail é <?=$clientes2["email"]
-        ?></p>
+            Olá meu nome é <b><i><?=$clientes2["nome"]?></i></b> tenho 
+            <?=$clientes2["idade"]?> anos meu e-mail é <b><?=$clientes2["email"]
+
+        ?></p></b>
 
     
 
