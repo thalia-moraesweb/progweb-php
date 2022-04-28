@@ -49,11 +49,11 @@
         <h2>Funções de debug/depuração</h2>
 
             <pre>
-        <?=print_r($cursos)?>
+        <?=print_r($curso)?>
         </pre>
 
         <pre>
-        <?=var_dump($cursos)?>    
+        <?=var_dump($curso)?>    
         </pre>
 
 </body>
