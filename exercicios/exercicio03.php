@@ -21,9 +21,10 @@
       
     }else { ($salario <= 1000) {
         $salario*1.05
+        echo "<p>reajuste</p>"
     } 
         
-
+     
         
 
 
