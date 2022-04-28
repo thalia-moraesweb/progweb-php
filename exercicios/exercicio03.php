@@ -19,7 +19,7 @@
     } elseif( ($salario >= 1000){
         $reajuste1 = $salario*1.10
       
-    } else { ($salario <= 1000) {
+    }else { ($salario <= 1000) {
         $salario*1.05
     } 
         
