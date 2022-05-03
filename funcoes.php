@@ -51,3 +51,15 @@
     $segundo = 10489;
     ?>
     <p> <?=soma($primeiro, $segundo)?> </p>
+    <?php 
+    $preco = 1578.99;
+    $desconto = 75.4789;
+    $salarioMinimo = 1212;
+    $novoSalario = 2500.47;    
+    ?>
+    <ul>
+        <li>Preço: <?=$preco?> </li>
+        <li>Desconto: <?=$desconto?> </li>
+        <li>Salário mínimo: <?=$salarioMinimo?> </li>
+        <li>Novo salário: <?=$novoSalario?> </li>
+    </ul>
