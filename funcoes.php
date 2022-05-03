@@ -51,11 +51,16 @@
     $segundo = 10489;
     ?>
     <p> <?=soma($primeiro, $segundo)?> </p>
+
     <?php 
     $preco = 1578.99;
     $desconto = 75.4789;
     $salarioMinimo = 1212;
-    $novoSalario = 2500.47;    
+    $novoSalario = 2500.47;   
+    
+    function formataNumero($valor){
+        return number_format($valor; 2; ","; ".");
+    }
     ?>
     <ul>
         <li>Preço: <?=$preco?> </li>
