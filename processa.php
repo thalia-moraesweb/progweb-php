@@ -11,6 +11,16 @@
     <hr>
 
     <?php
+    if( empty($_POST["nome"]) || empty($_POST["email"]) ){
+    ?>
+
+    <p style="color: blue;"> Por favor preencha nome e e-mail!</p>
+    <p><a href="08-formulario.html">Voltar</a></p> <!-- opcional -->
+    <?php
+    } else {
+
+  ?>
+    <?php
    /*  echo "<pre>";
     var_dump($_POST);
     echo "</pre>"; */
@@ -49,12 +59,15 @@
                 <?php } ?>
                 
             </ul>
-            
+
             <?php } ?>
-           
+            
     </li>
         <li> Informativos: <?=$informativos?> </li>
         <li> Mensagem: <?=$mensagem?> </li>
         </ul>
+        <?php } ?> <!-- fim do else -->
+
+
     </body>
 </html>
