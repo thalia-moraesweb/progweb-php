@@ -55,11 +55,52 @@ do{
 
    $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
 ?>
-<?php
-while($meses < $j ){
+<!-- Lista OL inicia e termina independentemente do php -->
+<ol>
+    <?php for($i = 0; $i < count($meses); $i++){ ?>
+        <!-- itens lista dependem do php for -->
+        <li> <?=$meses[$i]?> </li>
+        <?php } ?>
 
+</ol>
+<!-- lista ol e li iniciam e termina dependendo do php -->
+<!-- jeito errado -->
+<?php for($i = 0; $i < count($meses); $i++){?>
+    <ol>
+        <li> <?=$meses[$i] ?> </li>
+    </ol>
+    <?php } ?>
+
+<hr>
+
+    <h2>foreach (para cada)</h2>
+    <p>Loop exclusivo para Arrays</p>
+
+    <ol>
+        <!-- palavra-chave 'as' : como -->
+        <?php foreach($meses as $mes){ ?>
+        <li> <?=$mes?> </li>
+        <?php } ?>   
+    </ol>
+
+<?php
+//Array Associativo (formados por pares de chaves=>valor)
+$curso = [
+    //chave (key) => valor (value)
+    "nome" => "Programador Web",
+    "carga_horaria" => 240,
+    "unidade" => "Penha",
+    "ucs" => 5,
+];
+/* $curso $key $value pode ser escrito assim */
+foreach($curso as $dados => $valor){
+?>
+<p> <?=$dados?> - <?$valor?> </p>
+
+<?php
 }
 ?>
+<<<<<<< Updated upstream
      <p> <?=$meses = $j?> </p>
      <?php
 
@@ -115,9 +156,10 @@ foreach($curso as $dados => $valor){
 
 
 
+=======
+>>>>>>> Stashed changes
 
 
-   ?>
 
 
 

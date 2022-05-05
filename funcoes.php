@@ -43,8 +43,13 @@
         return $valor1 + $valor2;
     }
     ?>
+<<<<<<< Updated upstream
     <p> <?soma(150,200)?> </p>
     <p> <?soma(28, 87)?></p>
+=======
+    <p> <?=soma(150,200)?> </p>
+    <p> <?=soma(28, 87)?></p>
+>>>>>>> Stashed changes
 
     <?php
     $primeiro = 1257.45;
@@ -59,7 +64,11 @@
     $novoSalario = 2500.47;   
     
     function formataNumero($valor){
+<<<<<<< Updated upstream
         return number_format($valor; 2; ","; ".");
+=======
+        return number_format($valor, 2, ",", ".");
+>>>>>>> Stashed changes
     }
     ?>
     <ul>
@@ -67,4 +76,11 @@
         <li>Desconto: <?=$desconto?> </li>
         <li>Salário mínimo: <?=$salarioMinimo?> </li>
         <li>Novo salário: <?=$novoSalario?> </li>
+<<<<<<< Updated upstream
     </ul>
+=======
+    </ul>
+
+</body>
+</html>
+>>>>>>> Stashed changes
